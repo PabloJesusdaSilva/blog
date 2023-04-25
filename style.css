@@ -1,127 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #f3f5f7;
-    font-family: 'Lexend Deca', sans-serif;
+  background-color: #f3f5f7;
+  font-family: "Lexend Deca", sans-serif;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background: rgb(87, 74, 232);
+  background: linear-gradient(90deg, rgb(87, 74, 232) 0%, rgb(62, 161, 219) 100%);
+}
+body header .title-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  color: white;
+}
+body header input {
+  width: 500px;
+  height: 30px;
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+body .posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 50vh;
+  margin: 80px;
+}
+body .posts .post {
+  width: 800px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(19, 19, 31, 0.05);
+  padding: 30px;
+  border-radius: 8px;
+}
+body .posts .post .details {
+  display: flex;
+  justify-content: space-between;
+}
+body .posts .post h1 {
+  margin: 20px 0 20px 0;
+}
+body .posts .post p {
+  margin-bottom: 20px;
+  letter-spacing: 0.6px;
+  line-height: 26px;
 }
 
+/*
 
-/* ---------- HEADER ---------- */
+background: rgb(87,74,232);
+    background: linear-gradient(90deg, rgba(87,74,232,1) 0%, rgba(62,161,219,1) 200%);
 
-header {
-    width: 100%;
-    height: 190px;
-    background: rgb(87,74,232);
-    background: linear-gradient(90deg, rgba(87,74,232,1) 0%, rgba(62,161,219,1) 100%);
-}
-
-.container-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 180px;
-    padding: 15px;
-}
-
-.header-text {
-    display: flex;
-    justify-content: space-between;
-    width: 800px;
-    margin-top: 10px;
-    color: #ffffff;
-    font-size: 12px;
-}
-
-.search {
-    position: absolute;
-    top: 118px;
-}
-
-input {
-    align-items: flex-start;
-    width: 800px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    opacity: 0.4;
-}
-
-input[type="text"]::placeholder {
-    font-family: 'Lexend Deca', sans-serif;
-    padding: 14px;
-}
-
-
-/* ---------- MATÉRIAS ---------- */
-
-
-.container-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.post {
-    background: #ffffff;
-    width: 800px;
-    height: 100%;
-    margin: 30px;
-    padding: 30px;
     box-shadow: 0 0 10px rgba(19, 19, 31, 0.05);
-    border-radius: 5px;
-}
 
-.post span {
-    margin-left: 16px;
-    color: #717171;
-}
-
-.post i {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: -18px;
-    margin-bottom: 10px;
-}
-
-.fa-regular:hover {
-    color: red;
-}
-
-.post .title {
-    padding: 16px;
-}
-
-.post .description {
-    width: 750px;
-    padding: 16px;
-    font-size: 15px;
-    line-height: 28px;
-}
-
-@media (max-width: 700px){
-    .header {
-        width: 100%;
-    }
-
-    .header-text {
-        width: 350px;
-    }
-
-    input {
-        width: 350px;
-    }
-
-    .post {
-        width: 350px;
-        padding: 16px;
-    }
-
-    .post .description {
-        width: 300px;
-    }
-}
+*//*# sourceMappingURL=style.css.map */
