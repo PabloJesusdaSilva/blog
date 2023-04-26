@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 }
-
-body {
+* body {
   background-color: #f3f5f7;
   font-family: "Lexend Deca", sans-serif;
 }
-body header {
+* body header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,14 +18,17 @@ body header {
   background: rgb(87, 74, 232);
   background: linear-gradient(90deg, rgb(87, 74, 232) 0%, rgb(62, 161, 219) 100%);
 }
-body header .title-header {
+* body header .title-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 500px;
   color: white;
 }
-body header input {
+* body header .title-header span {
+  font-size: 22px;
+}
+* body header input {
   width: 500px;
   height: 30px;
   margin-top: 60px;
@@ -34,15 +36,15 @@ body header input {
   border-radius: 5px;
   opacity: 0.5;
 }
-body .posts {
+* body .post-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
-  height: 50vh;
-  margin: 80px;
+  height: 50%;
+  margin: 60px;
 }
-body .posts .post {
+* body .post-section .post {
   width: 800px;
   margin: 20px;
   background-color: white;
@@ -50,24 +52,35 @@ body .posts .post {
   padding: 30px;
   border-radius: 8px;
 }
-body .posts .post .details {
+* body .post-section .post .details {
   display: flex;
   justify-content: space-between;
 }
-body .posts .post h1 {
+* body .post-section .post .details .icon:hover {
+  color: #FF0000;
+  cursor: pointer;
+}
+* body .post-section .post h1 {
   margin: 20px 0 20px 0;
 }
-body .posts .post p {
+* body .post-section .post p {
   margin-bottom: 20px;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
-
-/*
-
-background: rgb(87,74,232);
-    background: linear-gradient(90deg, rgba(87,74,232,1) 0%, rgba(62,161,219,1) 200%);
-
-    box-shadow: 0 0 10px rgba(19, 19, 31, 0.05);
-
-*//*# sourceMappingURL=style.css.map */
+@media (max-width: 418px) {
+  * header {
+    display: flex;
+    width: 100%;
+    height: 200px;
+  }
+  * header .title-header {
+    width: 200px;
+  }
+  * .post-section {
+    width: 100%;
+  }
+  * .post-section .post {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
